@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -14,7 +15,7 @@ body {
     height: 100vh;
 }
 .container {
-    background: #fff;
+    background: #e6e6e6;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
@@ -72,6 +73,7 @@ body {
     padding: 10px 15px;
     width: 100%;
     font-size: 13px;
+    outline: none;
 }
 .form-container {
     position: absolute;
@@ -118,7 +120,7 @@ permite criar pontos especificos no tempo da animação
     margin: 20px 0;
 }
 .social-icons a {
-    border: 1 px #ccc;
+    border: 1px solid #ccc;
     border-radius: 20%;
     display: inline-flex;
     justify-content: center;
@@ -139,7 +141,7 @@ permite criar pontos especificos no tempo da animação
     z-index: 1000;
 }
 .container.active .toggle-container {
-    transform: (-100%);
+    transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
 .toggle {
@@ -148,7 +150,7 @@ permite criar pontos especificos no tempo da animação
     height: 100%;
     color: white;
     position: relative;
-    left: -100;
+    left: -100%;
     width: 200%;
     transform: translateX(0);
     transition: all 0.6s ease-in-out;
