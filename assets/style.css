@@ -140,5 +140,5 @@ permite criar pontos especificos no tempo da animação
 }
 .container.active .toggle-container {
     transform: (-100%);
-    border-radius: ;
+    border-radius: 0 150px 100px 0;
 }
